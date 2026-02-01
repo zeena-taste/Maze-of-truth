@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maze</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="maze">
+      <div id="player-block"></div>
+    </div>
+    <div id="mask"></div>
+
+  <div id="state-window" style="
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 10px 15px;
+    font-family: sans-serif;
+    border-radius: 6px;
+    z-index: 200;
+">
+  Mask: <span id="mask-status">OFF</span><br>
+</div>
+
+
+</body>
+  <script src="Maze+player.js"></script>
+  <script src="test-mask.js"></script>
+</html>
