@@ -8,3 +8,5 @@ Game instruction:
 - use M to toggle mask on and off which allows you to see extra path ways and the coins
 - Collect all coins to be able to unlock the hidden door
 - once you finish level 3 you win
+
+credits to https://github.com/AlexanderFarrell/maze_generator_javascript.git for the maze genrator
