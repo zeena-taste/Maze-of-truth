@@ -1,0 +1,194 @@
+/* =========================
+   GLOBAL RESET & BASE
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #071021;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* =========================
+   MENU / COVER PAGE
+========================= */
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;       /* FIXED */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 64px;
+  color: #50ccff;
+  margin-bottom: 6px;
+}
+
+.menu-subtitle {
+  color: #c0e5ff;
+  margin-bottom: 20px;
+}
+
+.start-button {
+  padding: 12px 34px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(135deg, #3399ff, #2277dd);
+}
+
+/* =========================
+   PLAYFUL TITLE ANIMATION
+========================= */
+.playful {
+  font-size: 320%;
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
+  display: block;
+  max-width: 80vw;
+  min-height: 90px;
+  margin: 0 auto 0.6rem;
+}
+
+.playful span {
+  position: relative;
+  animation: scatter 1.75s infinite;
+}
+
+/* Color Variations */
+.playful span {
+  color: #0066ff;
+  text-shadow: 0 0 #00bfff, 1px 1px #00bfff, 2px 2px #00bfff,
+               3px 3px #00bfff, 4px 4px #00bfff, 5px 5px #00bfff;
+}
+
+.playful span:nth-child(2n) {
+  color: #1e90ff;
+  text-shadow: 0 0 #4da6ff, 1px 1px #4da6ff, 2px 2px #4da6ff,
+               3px 3px #4da6ff, 4px 4px #4da6ff;
+  animation-delay: 0.3s;
+}
+
+.playful span:nth-child(3n) {
+  color: #00a8ff;
+  text-shadow: 0 0 #00d4ff, 1px 1px #00d4ff, 2px 2px #00d4ff;
+  animation-delay: 0.15s;
+}
+
+.playful span:nth-child(5n) {
+  color: #0047ab;
+  text-shadow: 0 0 #0066ff, 1px 1px #0066ff;
+  animation-delay: 0.4s;
+}
+
+@keyframes scatter {
+  0%   { top: 0; }
+  50%  { top: -10px; }
+  100% { top: 0; }
+}
+
+.playful-subtitle {
+  color: #c0e5ff;
+  letter-spacing: 1px;
+}
+
+/* =========================
+   INSTRUCTIONS SECTION
+========================= */
+.instructions-container {
+  max-width: 1200px;
+  margin: 20px auto;     /* FIXED spacing */
+  padding: 20px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.instructions-title {
+  font-size: 24px;
+  color: #50ccff;
+  margin-bottom: 15px;
+}
+
+.instructions-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+.instructions-table th,
+.instructions-table td {
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.instructions-table th {
+  background: rgba(80,200,255,0.15);
+  color: #50ccff;
+  font-weight: 700;
+  text-align: left;
+}
+
+.instructions-table td {
+  background: rgba(0,0,0,0.2);
+}
+
+.instructions-table tr:hover {
+  background: rgba(80,200,255,0.08);
+}
+
+.instructions-note {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #a0e7e5;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .playful {
+    font-size: 200%;
+  }
+
+  .instructions-table {
+    font-size: 12px;
+  }
+
+  .instructions-table th,
+  .instructions-table td {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-title {
+    font-size: 40px;
+  }
+
+  .levels-grid {
+    padding: 16px;
+  }
+
+  .instructions-container {
+    padding: 12px;
+    margin: 12px;
+  }
+
+  .playful {
+    font-size: 140%;
+  }
+}

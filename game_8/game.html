@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask of Truth</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Menu Screen -->
+    <div id="menu-screen" class="screen active">
+        <div id="menu-background" class="menu-background"></div>
+        <div class="menu-content">
+            <h1 class="playful" aria-label="Mask of Truth">
+              <span aria-hidden="true">M</span><span aria-hidden="true">a</span><span aria-hidden="true">s</span><span aria-hidden="true">k</span><span aria-hidden="true"> </span><span aria-hidden="true">o</span><span aria-hidden="true">f</span><span aria-hidden="true"> </span><span aria-hidden="true">T</span><span aria-hidden="true">r</span><span aria-hidden="true">u</span><span aria-hidden="true">t</span><span aria-hidden="true">h</span>
+            </h1>
+            <button id="start-button" class="start-button">START GAME</button>
+        </div>
+        <div id="menu-particles" class="particles-container"></div>
+    </div>
+
+    <div class="instructions-container">
+    <h2 class="instructions-title">Game Controls & Instructions</h2>
+    <table class="instructions-table">
+      <thead>
+        <tr>
+          <th>Action</th>
+          <th>Keyboard</th>
+          <th>On-Screen</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Move Up</td>
+          <td>↑ or W</td>
+          <td>▲ Button</td>
+          <td>Navigate upward in the maze</td>
+        </tr>
+        <tr>
+          <td>Move Down</td>
+          <td>↓ or S</td>
+          <td>▼ Button</td>
+          <td>Navigate downward in the maze</td>
+        </tr>
+        <tr>
+          <td>Move Left</td>
+          <td>← or A</td>
+          <td>◀ Button</td>
+          <td>Navigate leftward in the maze</td>
+        </tr>
+        <tr>
+          <td>Move Right</td>
+          <td>→ or D</td>
+          <td>▶ Button</td>
+          <td>Navigate rightward in the maze</td>
+        </tr>
+        <tr>
+          <td>Zoom In</td>
+          <td>+</td>
+          <td>+ Button</td>
+          <td>Increase zoom level (up to 2x)</td>
+        </tr>
+        <tr>
+          <td>Zoom Out</td>
+          <td>−</td>
+          <td>− Button</td>
+          <td>Decrease zoom level (down to 0.5x)</td>
+        </tr>
+        <tr>
+          <td>Reset Zoom</td>
+          <td>0</td>
+          <td>0 Button</td>
+          <td>Return to normal zoom (1x)</td>
+        </tr>
+        <tr>
+          <td>Toggle Mask</td>
+          <td>M</td>
+          <td>Toggle Mask Button</td>
+          <td>Turn the mask effect on/off (reveals treasures)</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="instructions-note"><strong>Objective:</strong> Navigate through the maze to find treasures when the mask is active. Use zoom to explore large mazes more easily.</p>
+  </div>
+    <script>
+      document.getElementById('start-button').addEventListener('click', () => {
+        location.href = 'levels.html';
+      });
+    </script>
+</body>
+</html>
