@@ -1,5 +1,6 @@
 # Maze-of-truth
 Mask of truth is a top-down puzzle game inspired by RPG style games. You navigate a maze and try to escape
+Created with the help of my time in a 48 hour Global Game Jam
 
 Download game file from itch.io or github run the html code and run the game.html file
 
